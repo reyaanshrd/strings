@@ -1,0 +1,19 @@
+div {
+    margin-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 540px;
+    height: 475px;
+    background-color: azure;
+}
+
+body {
+    background-color: orange;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+
