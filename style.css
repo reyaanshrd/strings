@@ -5,15 +5,26 @@ div {
     margin-top: 100px;
     width: 540px;
     height: 475px;
-    background-color: azure;
+    background-color: rgb(103, 255, 255);
 }
 
 body {
-    background-color: orange;
+    background-color: darkred;
 }
 
 label {
     margin-bottom: 5px;
 }
 
+h1 {
+    text-align: center;
+    background-color: blue;
+    text-decoration: white;
+}
+button {
+    background-color: coral;
+}
+input {
+    margin-bottom: 3px;
+}
 

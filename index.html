@@ -7,19 +7,19 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body><center><table ><td style="height: 75%;width: 45%;">
+<body><h1>Photo Liker</h1><center><table ><td style="height: 75%;width: 45%;">
     <div id="settings">
         <center>
         <label>border-style:</label>
-        <input id="1"><br>
+        <input id="1" oninput="bs_f()"><br>
         <label>border-colour:</label>
-        <input id="2"><br>
+        <input id="2" oninput="bc_f()"><br>
         <label>border-width:</label>
-        <input id="3"><br>
+        <input id="3" oninput="bw_f()"><br>
         <label>image-width:</label>
-        <input id="4"><br>
+        <input id="4" oninput="imageproperties()"><br>
         <label>image-height:</label>
-        <input id="5"><br>
+        <input id="5" oninput="imageproperties()"><br>
         <button>apply changes</button>
         <button>flip image</button>
         </center>
@@ -27,14 +27,14 @@
     <td>
         <div id="settings">
             <center>
-            <img  src="paneer-butter-masala-5.webp" alt="panner" height="225px" width="225px" ><br>
-            <button>likes</button>
-            <button>dislikes</button>
+            <img  id="imageofpanner" src="paneer-butter-masala-5.webp" alt="panner" height="225px" width="225px" ><br>
+            <button id="likes" onclick="likes_function()">likes</button>
+            <button id="dislikes" onclick="dislikes_function()">dislikes</button>
             <label>likes:</label>
-            <label>0</label><br>
-            <textarea></textarea>
-            <input>
-            <button height="25px" width="25px"><img src="comments.png" height="25px" width="25px"></button>
+            <label id="zero">0</label><br>
+            <textarea id="comments_display" readonly></textarea>
+            <input id="comments">
+            <button height="25px" width="25px" onclick="comment_add()"><img src="comments.png" height="25px" width="25px"></button>
             </center>
         </div>
     </td>
